@@ -1,0 +1,39 @@
+.why-choose {
+    text-align: center;
+    background-color: var(--gray);
+    padding: 2em 0;
+
+    .why-choose__main {
+        margin-bottom: 2em;
+
+        & p {
+            color: var(--grayBlue);
+            font-size: 1em;
+        }
+        .title__h2 {
+            font-size: 2em;
+            color: var(--darkBlue);
+            font-weight: 400;
+        }
+    }
+    
+}
+
+.why-choose__characteristics {
+
+    display: flex;
+    flex-flow: column nowrap;
+
+    .characteristics {
+        margin: 1em 0;
+
+        & h3 {
+            color: var(--darkBlue);
+            font-weight: 400;
+        }
+
+        & span {
+            color: var(--grayBlue);
+        }
+    }
+}
