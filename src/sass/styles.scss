@@ -2,6 +2,7 @@
 @import "./menu.scss";
 @import "./why-choose.scss";
 @import "./latest-articles.scss";
+@import "./footer.scss";
 
 :root {
     font-size: 16px;
@@ -67,4 +68,40 @@ body {
     font-size: 1em;
     cursor: pointer;
     outline: none;
+}
+
+@mixin icon {
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    display: inline-flex;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.icon {
+    &__fa {
+        @include icon();
+        background-image: url('../images/icon-facebook.svg');
+    }
+
+    &__yt {
+        @include icon();
+        background-image: url('../images/icon-youtube.svg');
+    }
+
+    &__tw {
+        @include icon();
+        background-image: url('../images/icon-twitter.svg');
+    }
+
+    &__pt {
+        @include icon();
+        background-image: url('../images/icon-pinterest.svg');
+    }
+
+    &__ig {
+        @include icon();
+        background-image: url('../images/icon-instagram.svg');
+    }
 }
