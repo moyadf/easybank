@@ -11,19 +11,49 @@
 <body>
     
     <header class="header">
-        <img src="./static/images/logo.svg">
-        <nav class="menu"></nav>
+        <div class="wrapper">
+            <div class="header__content">
+
+                <img class="header__logo" src="./static/images/logo.svg">
+                <input type="checkbox" id="menu" class="menu__checkbox">
+
+                <ul class="menu">
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">About</a>
+                    </li>
+                    <li>
+                        <a href="">Contact</a>
+                    </li>
+                    <li>
+                        <a href="">Blog</a>
+                    </li>
+                    <li>
+                        <a href="">Careers</a>
+                    </li>
+    
+                </ul>
+    
+                <button class="button">Request Invite</button>
+                <label for="menu" class="menu__button"></label>
+            </div>
+        </div>
     </header>
 
-    <section class="hero">
+    <section class="banner ">
         <div class="wrapper">
-
-            <div class="hero__image"></div>
-
-            <h1 class="title__h1">Next generation digital Banking</h1>
-            <p class="copy">Take your financial life online. Your Easybank account will be a one-stop-shop for spending. Saving, budgeting, investing, and much more</p>
-            <button class="button">Request Invite</button>
-
+            <div class="banner__content">
+                <div class="banner__image">
+                    <img class="banner__img" src="./static/images/image-mockups.png" alt="">
+                </div>
+                <div class="banner__description">
+                    <h1 class="title__h1">Next generation digital banking</h1>
+                    <p class="copy">Take your finalcial life online. Your Easybank account will be a one-stop-shop for spending. saving, budgeting, investing, and much more.</p>
+                    <button class="button">Request Invite</button>
+                </div>
+          </div>
         </div>
     </section>
 
@@ -172,7 +202,7 @@
     <footer class="footer">
         <div class="wrapper">
 
-            <svg xmlns="http://www.w3.org/2000/svg" width="139" height="20">
+            <svg class="footer__logo" xmlns="http://www.w3.org/2000/svg" width="139" height="20">
                 <defs>
                     <linearGradient id="a" x1="72.195%" x2="17.503%" y1="0%" y2="100%">
                         <stop offset="0%" stop-color="#33D35E"/>
@@ -189,37 +219,39 @@
             </svg>
 
             <!-- social Links -->
-            <p class="footer__social-media">
+            <div class="footer__social-media">
                 <a href="#" class="icon__fa"></a>
                 <a href="#" class="icon__yt"></a>
                 <a href="#" class="icon__tw"></a>
                 <a href="#" class="icon__pt"></a>
                 <a href="#" class="icon__ig"></a>
-            </p>
+            </div>
 
-            <a href="#" class="footer__link">
-                About Us
-            </a>
-
-            <a href="#" class="footer__link">
-                Contatc
-            </a>
-
-            <a href="#" class="footer__link">
-                Blog
-            </a>
-
-            <a href="#" class="footer__link">
-                Careers
-            </a>
-
-            <a href="#" class="footer__link">
-                Support
-            </a>
-
-            <a href="#" class="footer__link">
-                Privacy & Policiy
-            </a>
+            <div class="footer__links">
+                <a href="#" class="footer__link">
+                    About Us
+                </a>
+    
+                <a href="#" class="footer__link">
+                    Contatc
+                </a>
+    
+                <a href="#" class="footer__link">
+                    Blog
+                </a>
+    
+                <a href="#" class="footer__link">
+                    Careers
+                </a>
+    
+                <a href="#" class="footer__link">
+                    Support
+                </a>
+    
+                <a href="#" class="footer__link">
+                    Privacy & Policiy
+                </a>
+            </div>
 
             <div class="footer__container-btn">
                 <button class="button">
@@ -228,7 +260,7 @@
             </div>
             
 
-            <p class="copy">
+            <p class="footer__copy">
                 &copy; Easybank, All Rights Reserved
             </p>
 

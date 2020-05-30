@@ -44,4 +44,31 @@
             }
         }
     }
+
+    @media screen and (min-width: 768px) {
+        &__articles {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 1.875em;
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        & h2 {
+            text-align: left;
+        }
+    
+        .latest-articles {
+            &__articles {
+                grid-template-columns: repeat(4, 1fr);
+                
+                .latest-articles__card {
+                    .latest-articles__card--text {
+                        padding: 1em;
+                    }
+                }
+            }
+        }
+       
+    }
 }

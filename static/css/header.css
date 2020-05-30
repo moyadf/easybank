@@ -1,6 +1,24 @@
 .header {
-  display: flex;
-  padding: 1em 1.5em;
-  justify-content: space-between; }
+  padding: 1em 0;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  background: white; }
+  .header__logo {
+    align-self: center; }
+  .header .button {
+    display: none; }
+  .header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  @media screen and (min-width: 1024px) {
+    .header .button {
+      display: inline; }
+    .header__content {
+      width: 100%;
+      display: flex;
+      justify-content: space-between; } }
 
 /*# sourceMappingURL=header.css.map */

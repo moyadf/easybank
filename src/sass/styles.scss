@@ -1,5 +1,6 @@
 @import "./header.scss";
 @import "./menu.scss";
+@import "./banner.scss";
 @import "./why-choose.scss";
 @import "./latest-articles.scss";
 @import "./footer.scss";
@@ -21,26 +22,12 @@ body {
     margin: 0;
 }
 
-.hero {
-    text-align: center;
-    padding-bottom: 4em;
-
-    .copy {
-        margin-bottom: 2.5em;
-        color: var(--grayBlue);
-    }
-
-    &__image {
-        height: 300px;
-        background: url('../images/image-mockups.png') center bottom no-repeat, url('../images/bg-intro-mobile.svg') center no-repeat;
-        background-size: 345px, cover;
-        margin: 0 calc(-1 * var(--wrapperSpace));
-        margin-bottom: 1em;
-    }
-}
-
 .wrapper {
     padding: 0 var(--wrapperSpace);
+    max-width: calc(1115px + 1.5em);
+    margin: auto;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .title {
